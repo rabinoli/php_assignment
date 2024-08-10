@@ -1,0 +1,560 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #444;
+}
+
+a {
+    color: #008CBA;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.car-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.car-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.car-item img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+/* Showcase Section */
+#showcase {
+    min-height: 300px;
+    color: #d54949;
+    text-align: center;
+}
+
+#showcase h2 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    height: 50px;
+    background: #0779e4;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 30px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #0056b3;
+    color: #fff;
+}
+
+/* Features Section */
+#features {
+    padding: 20px 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+#features .feature {
+    display: inline-block;
+    width: 30%;
+    margin: 20px 1%;
+    vertical-align: top;
+}
+
+#features img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#features h3 {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+/* Testimonials Section */
+
+#testimonials {
+    margin: 40px 0;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.testimonial-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    max-width: 300px; /* Adjust as needed */
+    text-align: left; /* Align text left within the card */
+    margin: 10px auto; /* Center cards horizontally */
+}
+
+.testimonial-photo {
+    width: 80px; /* Set the size of the photo */
+    height: 80px;
+    border-radius: 50%; /* Make the photo circular */
+    margin-bottom: 15px; /* Space between the photo and content */
+    object-fit: cover; /* Ensure the photo covers the area without distortion */
+}
+
+.testimonial-content p {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.testimonial-content cite {
+    font-style: italic;
+    color: #666;
+}
+
+
+/* Footer Section */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer .footer-section {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 2%;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #555;
+    margin-top: 20px;
+}
+
+/* Featured Cars Section */
+#featured-cars {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#featured-cars .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Spread items evenly */
+}
+
+#featured-cars .car-item {
+    flex: 0 0 30%; /* Each car item takes up 30% of the container width */
+    margin-bottom: 20px; /* Space between rows */
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+#featured-cars img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#featured-cars h3 {
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+#featured-cars p {
+    font-size: 18px;
+    color: #333;
+}
+
+#featured-cars .btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#featured-cars .btn:hover {
+    background-color: #cc5200;
+}
+
+/* Car Collection Section */
+#car-collection {
+    padding: 40px 20px; /* Padding around the section */
+    background-color: #f9f9f9; /* Background color for the section */
+}
+
+#car-collection h2 {
+    text-align: center; /* Center-align the heading */
+    font-size: 36px; /* Font size for the heading */
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+/* Car List Layout */
+.car-list {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+    gap: 20px; /* Space between car items */
+    max-width: 1200px; /* Maximum width of the grid container */
+    margin: 0 auto; /* Center the grid container */
+}
+
+/* Car Item Styling */
+.car-item {
+    background-color: #fff; /* Background color for the car item */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Shadow for the car item */
+    padding: 20px; /* Padding inside the car item */
+    text-align: center; /* Center-align text */
+}
+
+.car-item img {
+    width: 100%; /* Full width image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+.car-item h3 {
+    font-size: 24px; /* Font size for the car model */
+    margin: 15px 0; /* Space above and below the car model */
+}
+
+.car-item p {
+    font-size: 16px; /* Font size for the text */
+    margin: 10px 0; /* Space above and below text */
+}
+
+.car-item .btn {
+    display: inline-block; /* Inline-block button */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size for the button text */
+    margin-top: 10px; /* Space above the button */
+}
+
+.car-item .btn:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Contact Section */
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Form Box Styling */
+.form-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.form-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-box label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-box input,
+.form-box textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-box textarea {
+    resize: vertical; /* Allow vertical resizing of the textarea */
+    height: 150px; /* Default height for the textarea */
+}
+
+.form-box .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-box .btn:hover {
+    background-color: #0056b3;
+}
+
+#why-choose-us .container {
+    text-align: center;
+}
+
+.benefit-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.benefit-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.benefit-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.benefit-card p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.benefit-card:hover {
+    transform: scale(1.05);
+}
+
+#latest-news {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+#latest-news .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#latest-news .news-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.news-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    flex: 1 1 calc(33.333% - 20px); /* Adjusts to fit three cards in a row */
+    box-sizing: border-box;
+    max-width: calc(33.333% - 20px); /* Ensures the cards fit in a row */
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.news-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.news-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.news-card .btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.news-card .btn:hover {
+    background-color: #0056b3;
+}
+
+/* partner  */
+#our-partners .container {
+    text-align: center;
+}
+
+.partner-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.partner-card {
+    flex: 1 1 30%; /* 3 cards per row with some margin */
+    box-sizing: border-box;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px; /* Increased padding for better spacing */
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease;
+}
+
+.partner-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.partner-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.partner-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.partner-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
